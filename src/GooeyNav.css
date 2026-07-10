@@ -1,0 +1,145 @@
+:root {
+  --linear-ease: linear(
+    0,
+    0.068,
+    0.19 2.7%,
+    0.804 8.1%,
+    1.037,
+    1.199 13.2%,
+    1.245,
+    1.27 15.8%,
+    1.274,
+    1.272 17.4%,
+    1.249 19.1%,
+    0.996 28%,
+    0.949,
+    0.928 33.3%,
+    0.926,
+    0.933 36.8%,
+    1.001 45.6%,
+    1.013,
+    1.019 50.8%,
+    1.018 54.4%,
+    1 63.1%,
+    0.995 68%,
+    1.001 85%,
+    1
+  );
+}
+
+.gooey-nav-container {
+  --color-1: #baff45;
+  --color-2: #93ffc3;
+  --color-3: #7dff8b;
+  --color-4: #f7fbff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+}
+
+.gooey-nav-container nav {
+  display: flex;
+  position: relative;
+  transform: translate3d(0, 0, 0.01px);
+}
+
+.gooey-nav-container nav ul {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 44px);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  color: rgba(247, 251, 255, 0.58);
+  text-shadow: 0 1px 1px rgba(3, 7, 5, 0.28);
+}
+
+.gooey-nav-container nav ul li {
+  position: relative;
+  border-radius: 999px;
+  color: rgba(247, 251, 255, 0.58);
+  cursor: pointer;
+  box-shadow: 0 0 0.5px 1.5px transparent;
+  transition:
+    color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.gooey-nav-container nav ul li button {
+  position: relative;
+  display: inline-block;
+  padding: 0.72em 1.12em;
+  border: 0;
+  border-radius: 999px;
+  color: inherit;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.gooey-nav-container nav ul li:focus-within {
+  box-shadow: 0 0 0.5px 1.5px rgba(186, 255, 69, 0.7);
+}
+
+.gooey-nav-container nav ul li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 999px;
+  background: var(--tech-lime, #baff45);
+  opacity: 0;
+  transform: scale(0.86);
+  transition:
+    opacity 0.28s ease,
+    transform 0.28s var(--linear-ease);
+}
+
+.gooey-nav-container nav ul li:hover {
+  color: rgba(247, 251, 255, 0.95);
+}
+
+.gooey-nav-container nav ul li.active {
+  color: #061006;
+  text-shadow: none;
+}
+
+.gooey-nav-container nav ul li.active::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 900px) {
+  .gooey-nav-container nav ul {
+    gap: 4px;
+  }
+
+  .gooey-nav-container nav ul li button {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+
+  .gooey-nav-container nav ul li button {
+    padding: 0.72em 0.72em;
+  }
+}
+
+.gooey-nav-container nav ul li button {
+  font-size: 14px;
+}
+
+.gooey-nav-container nav ul li,
+.gooey-nav-container nav ul li button,
+.gooey-nav-container nav ul li::after {
+  border-radius: 999px;
+}
