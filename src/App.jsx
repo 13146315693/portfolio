@@ -412,7 +412,7 @@ function WorkCategoryPage({ category }) {
       <div className="work-page-inner">
         <a className="back-link" href="#works">返回作品能力</a>
         <div className="work-detail-hero reveal">
-          <img src={category.image} alt={`${category.title} 预览`} />
+          <img src={category.image} alt={`${category.title} 预览`} decoding="async" fetchPriority="high" />
           <div>
             <h1 id="category-title">{category.title}</h1>
             <p>UI / UX 案例展示</p>
@@ -427,7 +427,12 @@ function WorkCategoryPage({ category }) {
               key={project.slug}
             >
               <div className="project-card-media">
-                <img src={getProjectCoverImage(project, category)} alt={`${project.title} 预览`} />
+                <img
+                  src={getProjectCoverImage(project, category)}
+                  alt={`${project.title} 预览`}
+                  decoding="async"
+                  loading="lazy"
+                />
               </div>
               <div className="project-card-body">
                 <div className="project-card-title-row">
@@ -492,6 +497,7 @@ function ProjectDetailPage({ result }) {
               loop
               muted
               playsInline
+              preload="metadata"
               poster={heroImage}
             >
               <source src={videoSrc} type="video/mp4" />
@@ -764,6 +770,8 @@ function App() {
                             <div className="popover-case-media">
                               <img
                                 alt={`${project.title} 首图`}
+                                decoding="async"
+                                loading="lazy"
                                 src={getProjectCoverImage(project, popoverCategory)}
                               />
                             </div>
@@ -783,6 +791,8 @@ function App() {
                           <div className="popover-case-media">
                             <img
                               alt={`${popoverCategory.title} 首图`}
+                              decoding="async"
+                              loading="lazy"
                               src={popoverCategory.image}
                             />
                           </div>
@@ -842,7 +852,14 @@ function App() {
       ) : (
         <>
       <section className="hero" aria-labelledby="hero-title">
-        <img src="/hero-upload-banner.jpg" className="hero-video" alt="" aria-hidden="true" />
+            <img
+              src="/hero-upload-banner.jpg"
+              className="hero-video"
+              alt=""
+              aria-hidden="true"
+              decoding="async"
+              fetchPriority="high"
+            />
         <div className="hero-shade" />
         <div className="hero-grid" />
         <div className="hero-shell">
@@ -917,7 +934,7 @@ function App() {
                 key={card.title}
                 aria-label={`查看${card.title}作品`}
               >
-                <img src={card.image} alt={`${card.title} 作品方向预览`} />
+                <img src={card.image} alt={`${card.title} 作品方向预览`} decoding="async" loading="lazy" />
                 <div className="capability-content">
                   <h3>{card.title}</h3>
                   <ul className="capability-list">
@@ -949,7 +966,7 @@ function App() {
         <div className="contact-inner">
           <div className="contact-card">
             <div className="contact-portrait" aria-hidden="true">
-              <img src="/profile-photo.jpg" alt="" />
+              <img src="/profile-photo.jpg" alt="" decoding="async" loading="lazy" />
             </div>
             <div className="contact-copy">
               <div className="contact-arrow-switch" aria-label="联系区切换">
