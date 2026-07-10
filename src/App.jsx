@@ -51,41 +51,41 @@ const capabilityCards = [
   {
     slug: 'mobile',
     title: '移动端设计',
-    image: '/portfolio/category-mobile.png',
+    image: '/portfolio/category-mobile.jpg',
     items: [
       { slug: 'charging-app', title: '智享充电APP', summary: '整合全国充电桩资源，提供找桩、充电、支付与优惠一站式服务，连接车主与主流运营商，降低找桩难、充电贵、操作繁成本。', image: '/portfolio/charging-app.jpg' },
       { slug: 'taifu-app', title: '掌上太傅APP改版', summary: '面向高净值客户的财富管理平台，聚合持牌金融机构与线上线下服务，重构移动工作台与核心路径，提升服务专业感与使用效率。', image: '/portfolio/taifu-app.jpg' },
-      { slug: 'peining-mini-program', title: '陪宁诊小程序', summary: '聚焦孤独就医场景，帮助用户快速预约专业陪诊师，兼顾医疗关怀与情感支持，强化安全感、专业性与人性化体验。', image: '/portfolio/mobile-app.png' }
+      { slug: 'peining-mini-program', title: '陪宁诊小程序', summary: '聚焦孤独就医场景，帮助用户快速预约专业陪诊师，兼顾医疗关怀与情感支持，强化安全感、专业性与人性化体验。', image: '/portfolio/mobile-app.jpg' }
     ]
   },
   {
     slug: 'web',
     title: 'Web端设计',
-    image: '/portfolio/category-web.png',
+    image: '/portfolio/category-web.jpg',
     items: [
       { slug: 'mes-system', title: 'MES生产执行管理系统', summary: '面向工厂车间的 ToB MES 后台，承接 ERP 订单并联动产线设备，打通工艺、生产、质检与仓储链路，支撑精益生产管控。', image: '/portfolio/mes-system.jpg' },
       { slug: 'task-command-center', title: '任务指令中心', summary: '面向公安消防的应急任务管理后台，覆盖任务配置、派发、执行、回传与统计闭环，提升指挥联动效率与流程追溯能力。', image: '/portfolio/task-center.jpg' },
-      { slug: 'yinglian-cloud', title: '影联云享', summary: '基于四视图阅片与三维建模工作台，融合 AI 临床问答，兼顾放射诊断操作逻辑与智能辅助，打造轻量高效诊疗体验。', image: '/portfolio/web-backend.png' }
+      { slug: 'yinglian-cloud', title: '影联云享', summary: '基于四视图阅片与三维建模工作台，融合 AI 临床问答，兼顾放射诊断操作逻辑与智能辅助，打造轻量高效诊疗体验。', image: '/portfolio/web-backend.jpg' }
     ]
   },
   {
     slug: 'dashboard',
     title: '可视化大屏',
-    image: '/portfolio/category-dashboard.png',
+    image: '/portfolio/category-dashboard.jpg',
     items: [
-      { slug: 'dca-control', title: 'DCA空气碳捕集智能控制中心', summary: '通过 3D 数字孪生监控空气碳捕集流程，统览气体流量、温压状态与 CO₂ 转化量，用数据呈现绿色环保价值。', image: '/portfolio/details/dca-control/image-01.png', popoverImage: '/portfolio/details/dca-control/image-01.png' },
-      { slug: 'zhougang-warehouse-twin', title: '周岗仓库数字孪生系统', summary: '以数字孪生呈现仓储空间、设备状态与运营态势，支持库存、告警、任务流转和现场监测一屏统览。', image: '/portfolio/details/zhougang-warehouse-twin/image-01.png', popoverImage: '/portfolio/popover/dashboard/zhougang-warehouse-twin.png' },
-      { slug: 'smart-dispatch-center', title: '智能调度中心', summary: '一屏统览卷烟厂产销、车间孪生、原料消耗与环境监测，帮助传统制造过程看得见、管得住、更高效。', image: '/portfolio/details/smart-dispatch-center/image-01.png', popoverImage: '/portfolio/popover/dashboard/smart-dispatch-center.png' },
-      { slug: 'clay-lab-screen', title: '黏土矿物提取实验管控大屏', summary: '实验流程、设备参数与结果数据的管控大屏设计。', image: '/portfolio/details/clay-lab-screen/image-01.png', popoverImage: '/portfolio/popover/dashboard/clay-lab-screen-2.png' }
+      { slug: 'dca-control', title: 'DCA空气碳捕集智能控制中心', summary: '通过 3D 数字孪生监控空气碳捕集流程，统览气体流量、温压状态与 CO₂ 转化量，用数据呈现绿色环保价值。', image: '/portfolio/details/dca-control/image-01.jpg', popoverImage: '/portfolio/details/dca-control/image-01.jpg' },
+      { slug: 'zhougang-warehouse-twin', title: '周岗仓库数字孪生系统', summary: '以数字孪生呈现仓储空间、设备状态与运营态势，支持库存、告警、任务流转和现场监测一屏统览。', image: '/portfolio/details/zhougang-warehouse-twin/image-01.jpg', popoverImage: '/portfolio/popover/dashboard/zhougang-warehouse-twin.jpg' },
+      { slug: 'smart-dispatch-center', title: '智能调度中心', summary: '一屏统览卷烟厂产销、车间孪生、原料消耗与环境监测，帮助传统制造过程看得见、管得住、更高效。', image: '/portfolio/details/smart-dispatch-center/image-01.jpg', popoverImage: '/portfolio/popover/dashboard/smart-dispatch-center.jpg' },
+      { slug: 'clay-lab-screen', title: '黏土矿物提取实验管控大屏', summary: '实验流程、设备参数与结果数据的管控大屏设计。', image: '/portfolio/details/clay-lab-screen/image-01.jpg', popoverImage: '/portfolio/popover/dashboard/clay-lab-screen-2.jpg' }
     ]
   },
   {
     slug: 'operation',
     title: '运营视觉设计',
-    image: '/portfolio/category-operation.png',
+    image: '/portfolio/category-operation.jpg',
     items: [
-      { slug: 'consumer-operation', title: 'C端运营视觉设计', summary: '活动 banner、营销专题与 C 端增长物料设计。', image: '/portfolio/consumer-operation-cover.png', popoverImage: '/portfolio/consumer-operation-cover.png' },
-      { slug: 'aigc-practice', title: 'AIGC设计练手', summary: '使用 AIGC 辅助视觉概念、素材生成和风格探索。', image: '/portfolio/visual-design.png' }
+      { slug: 'consumer-operation', title: 'C端运营视觉设计', summary: '活动 banner、营销专题与 C 端增长物料设计。', image: '/portfolio/consumer-operation-cover.jpg', popoverImage: '/portfolio/consumer-operation-cover.jpg' },
+      { slug: 'aigc-practice', title: 'AIGC设计练手', summary: '使用 AIGC 辅助视觉概念、素材生成和风格探索。', image: '/portfolio/visual-design.jpg' }
     ]
   }
 ];
@@ -104,7 +104,7 @@ const skills = [
 function makeDetailImages(folder, count) {
   return Array.from(
     { length: count },
-    (_, index) => `/portfolio/details/${folder}/image-${String(index + 1).padStart(2, '0')}.png`
+    (_, index) => `/portfolio/details/${folder}/image-${String(index + 1).padStart(2, '0')}.jpg`
   );
 }
 
@@ -842,7 +842,7 @@ function App() {
       ) : (
         <>
       <section className="hero" aria-labelledby="hero-title">
-        <img src="/hero-upload-banner.png" className="hero-video" alt="" aria-hidden="true" />
+        <img src="/hero-upload-banner.jpg" className="hero-video" alt="" aria-hidden="true" />
         <div className="hero-shade" />
         <div className="hero-grid" />
         <div className="hero-shell">
@@ -949,7 +949,7 @@ function App() {
         <div className="contact-inner">
           <div className="contact-card">
             <div className="contact-portrait" aria-hidden="true">
-              <img src="/profile-photo.png" alt="" />
+              <img src="/profile-photo.jpg" alt="" />
             </div>
             <div className="contact-copy">
               <div className="contact-arrow-switch" aria-label="联系区切换">
