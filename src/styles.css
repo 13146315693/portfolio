@@ -43,7 +43,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 1180px;
+  min-width: 320px;
   overflow-x: hidden;
   color: var(--color-text-primary);
   font-family: var(--font-primary);
@@ -137,7 +137,7 @@ main {
   left: 0;
   z-index: 80;
   width: 100%;
-  min-width: 1180px;
+  min-width: 320px;
   height: 96px;
   display: flex;
   align-items: center;
@@ -3341,7 +3341,7 @@ body.is-scrolled .site-nav {
 
 @media (max-width: 1280px) {
   body {
-    min-width: 1024px;
+    min-width: 0;
   }
 
   :root {
